@@ -7,10 +7,10 @@ function Login() {
   const [email, setEmail]=useState('');
   const [password, setPassword]=useState('');
 
-  const history = useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
     if (localStorage.getItem('user-info')){
-      history.push('/add')
+      navigate('/add');
     }
   }, [])
 
@@ -27,7 +27,7 @@ function Login() {
     });
     result = await result.json();
     localStorage.setItem("user-info", JSON.stringify(result));
-    history.push('/add');
+    navigate('/add');
   }
 
     return (
@@ -38,7 +38,7 @@ function Login() {
           <br />
           <input type="password" placeholder='Password' className='form-control' onChange={(e)=>setPassword(e.target.value)} />
           <br />
-          <button className='btn btn-primary' onChange={loginbase}>Button</button>
+          <button className='btn btn-primary' onChange={loginbase} onClick={(e) => navigate("/add")}>Button</button>
         </div>
       </div>
     )

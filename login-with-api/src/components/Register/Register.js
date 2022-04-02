@@ -4,7 +4,9 @@ import './register.css';
 class Register extends Component {
   render() {
     return (
-      <div>Register</div>
+      <div>
+        <h1 className='reg'>Happy to Have You <br /> Kindly Login</h1>
+        </div>
     )
   }
 }

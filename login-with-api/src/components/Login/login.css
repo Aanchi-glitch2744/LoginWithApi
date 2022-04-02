@@ -1,0 +1,9 @@
+.login-main{
+    background: linear-gradient(to right bottom, #db987e, #c8a166);
+    width: 45%;
+    margin: auto;
+    height: 30rem;
+    border-radius: 10px;
+    box-sizing: border-box; 
+    box-shadow: 3px 6px 40px #000;
+}

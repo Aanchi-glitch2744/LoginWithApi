@@ -20,7 +20,7 @@ function Login() {
     let result = await fetch('https://assignment-venturepact.herokuapp.com/login', {
       method: 'POST',
       headers: {
-        'Content-Type': "application/jspn",
+        'Content-Type': "application/json",
         "Accept": 'application/json'
       },
       body: JSON.stringify(item)

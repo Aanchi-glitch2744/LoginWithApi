@@ -5,15 +5,11 @@ import NotesList from '../NotesList/NotesList';
 import './add.css';
 
 const Add = () => {
-  // const initialState = JSON.parse(localStorage.getitem("notes")) || [];
+  
   const [input, setInput] = useState('');
-  const [notes, setNotes] = useState([]);  //initialstate (for Localstorage)
+  const [notes, setNotes] = useState([]);  
   const [editNote, setEditNote] = useState(null);
 
-  // useEffect(() => {
-  //   localStorage.setItem("notes", JSON.stringify(notes));
-  // }, [notes]);
- 
     return (
       <div className='container-add'>
         <div className='app-wrapper'>
